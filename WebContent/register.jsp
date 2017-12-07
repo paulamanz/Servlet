@@ -9,8 +9,8 @@
 <body>
 	<form action="register" method="post">
  
-        Name:<input type="text" name="userName"/><br/>
-        Password:<input type="password" name="password"/><br/>
+        Nombre del libro:<input type="text" name="nombre"/><br/>
+        Autor:<input type="text" name="autor"/><br/>
         <input type="submit" value="Submit"/>
  
     </form>

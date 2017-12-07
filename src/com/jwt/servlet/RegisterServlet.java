@@ -18,8 +18,8 @@ public class RegisterServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
  
-        String n = request.getParameter("userName");
-        String p = request.getParameter("password");
+        String n = request.getParameter("nombre");
+        String p = request.getParameter("autor");
    
  
         try {
@@ -28,14 +28,14 @@ public class RegisterServlet extends HttpServlet {
                     "jdbc:mysql://mysql:3306/lllc", "root", "root");
  
             PreparedStatement ps = con
-                    .prepareStatement("insert into USERDETAILS values(?,?)");
+                    .prepareStatement("insert into LIBRERIA values(?,?)");
             
             ps.setString(1, n);
             ps.setString(2, p);
  
             int i = ps.executeUpdate();
             if (i > 0)
-                out.print("You are successfully registered...");
+                out.print("¡Has insertado correctamente el libro!");
  
         } catch (Exception e2) {
             System.out.println(e2);
