@@ -7,13 +7,22 @@
 <title>Mi libreria</title>
 </head>
 <body>
-	<form action="register" method="post">
+<h2>Bienvenido a esta libreria!</h2>
+
+<h3>Que deseas hacer?</h3>
+
+	<form action="home" method="post">
  
-        Nombre del libro:<input type="text" name="nombre"/><br/>
-        Autor:<input type="text" name="autor"/><br/>
-        <input type="submit" value="Insertar"/>
+        <input type="submit" id= "ins" value="Insertar libro"/>
+ 
+	</form>
+
+	<form action="stock" method="get">
+ 
+        <input type="submit" id = "ver" value="Ver libros"/>
  
     </form>
+
 
 </body>
 </html>

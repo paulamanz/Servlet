@@ -1,7 +1,6 @@
 package com.jwt.servlet;
  
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,7 +15,7 @@ public class RegisterServlet extends HttpServlet {
             throws ServletException, IOException {
  
         response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
+        
  
         String n = request.getParameter("nombre");
         String p = request.getParameter("autor");
@@ -34,13 +33,18 @@ public class RegisterServlet extends HttpServlet {
             ps.setString(2, p);
  
             int i = ps.executeUpdate();
-            if (i > 0)
-                out.print("¡Has insertado correctamente el libro!");
- 
+            if (i > 0){
+            	
+            	response.sendRedirect("bookregistered.jsp");
+            }
+            
+            
+        	
+            	
         } catch (Exception e2) {
             System.out.println(e2);
         }
  
-        out.close();
+       
     }
 }

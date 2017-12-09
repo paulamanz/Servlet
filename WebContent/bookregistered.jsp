@@ -7,12 +7,10 @@
 <title>Mi libreria</title>
 </head>
 <body>
-	<form action="register" method="post">
- 
-        Nombre del libro:<input type="text" name="nombre"/><br/>
-        Autor:<input type="text" name="autor"/><br/>
-        <input type="submit" value="Insertar"/>
- 
+	<h3>Has insertado correctamente el libro!</h3> 
+	
+	<form action="bookreg" method="post">
+        <input type="submit" value="Volver a Home"/>
     </form>
 
 </body>
