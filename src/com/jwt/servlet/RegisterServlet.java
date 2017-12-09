@@ -19,6 +19,10 @@ public class RegisterServlet extends HttpServlet {
  
         String n = request.getParameter("nombre");
         String p = request.getParameter("autor");
+        
+        if (p.isEmpty()){
+        	p="Autor Desconocido";
+        }
    
  
         try {
