@@ -62,7 +62,7 @@ public class StockServlet extends HttpServlet {
         try
         {
             conectarBD();
-            rs = estSQL.executeQuery("SELECT * FROM contactos");
+            rs = estSQL.executeQuery("SELECT * FROM LIBRERIA");
             while( rs.next() )    //Mientras haya una sig. tupla
             { 
             	out.println(" <td>"+ rs.getString("nombre")+"</td>");
