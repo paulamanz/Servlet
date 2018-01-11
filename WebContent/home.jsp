@@ -7,7 +7,7 @@
 <title>Mi libreria</title>
 </head>
 <body>
-<h2>Bienvenido a la libreria AOS!</h2>
+<h2>Bienvenido a la libreria OpenShift!</h2>
 
 <h3>Que deseas hacer?</h3>
 
